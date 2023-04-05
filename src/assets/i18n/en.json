@@ -1,0 +1,8 @@
+{
+    "header.title": "My Angular Site",
+    "header.home": "Home",
+    "header.products": "Products",
+    "header.categories": "Categories",
+    "product.detail.price": "Price: {{ price }}"
+  }
+  
