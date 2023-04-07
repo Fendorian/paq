@@ -13,8 +13,6 @@ export class ProductsComponent {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.dataService.getProducts().subscribe(products => {
-      this.products = products;
-    });
-  }
+   
+}
 }

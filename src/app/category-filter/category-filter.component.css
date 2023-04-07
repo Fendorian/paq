@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .categories {
+    width: 50%;
+  }
+  
+  .categories ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .categories li {
+    cursor: pointer;
+    padding: 5px 0;
+  }
+  
+  .categories li:hover {
+    text-decoration: underline;
+  }
+  
+  .products {
+    width: 50%;
+  }
+  
+  .products ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  

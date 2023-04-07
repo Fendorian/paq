@@ -14,9 +14,6 @@ export class ProductDetailComponent {
   constructor(private route: ActivatedRoute, private dataService: DataService) { }
 
   ngOnInit(): void {
-    const productId = Number(this.route.snapshot.paramMap.get('id'));
-    this.dataService.getProducts().subscribe(products => {
-      this.product = products.find(product => product.id === productId);
-    });
+    
   }
 }

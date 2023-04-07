@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="categories">
+    <div *ngFor="let category of categories">
+      <h3>{{ category.name }}</h3>
+      <ul>
+        <li *ngFor="let subcategory of category.subcategories" (click)="showProducts(subcategory)">
+          {{ subcategory.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="products">
+    <div *ngIf="selectedSubcategory">
+      <h3>Products in {{ selectedSubcategory.name }}</h3>
+      <ul>
+        <li *ngFor="let product of selectedSubcategory.products">
+          {{ product.name }} - ${{ product.price }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

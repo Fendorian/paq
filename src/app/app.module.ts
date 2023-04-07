@@ -10,6 +10,9 @@ import { SubcategoriesComponent } from './subcategories/subcategories.component'
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SliderComponent } from './slider/slider.component';
+import { CategoryFilterComponent } from './category-filter/category-filter.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -18,12 +21,14 @@ import { SliderComponent } from './slider/slider.component';
     SubcategoriesComponent,
     HeaderComponent,
     ProductDetailComponent,
-    SliderComponent
+    SliderComponent,
+    CategoryFilterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   
   ],
   providers: [],
