@@ -1,0 +1,34 @@
+   <!-- <div *ngIf="selectedCategoryId === null" class="categories">
+    <div *ngFor="let category of data.categories" (click)="selectCategory(category.id)" class="category-card">
+      {{ category.name }}
+    </div>
+  </div>
+  <div *ngIf="selectedCategoryId !== null" class="subcategories">
+    <button (click)="selectCategory(null)">Back to Categories</button>
+    <hr>
+    <div *ngFor="let subcategory of filteredSubcategories">
+      <h3>{{ subcategory.name }}</h3>
+      <div *ngFor="let product of subcategory.products">
+        {{ product.name }} - {{ product.price | currency }}
+      </div>
+      <hr>
+    </div>
+  </div>
+   -->
+   <div *ngIf="selectedCategoryId === null" class="categories">
+    <div *ngFor="let category of data.categories" (click)="selectCategory(category.id)" class="category-card">
+      {{ category.name }}
+    </div>
+  </div>
+  <div *ngIf="selectedCategoryId !== null" class="subcategories">
+    <button (click)="selectCategory(null)">Back to Categories</button>
+    <hr>
+    <div *ngFor="let subcategory of filteredSubcategories">
+      <h3>{{ subcategory.name }}</h3>
+      <div *ngFor="let product of subcategory.products">
+        <a [routerLink]="['/product', product.id]">{{ product.name }} - {{ product.price | currency }}</a>
+      </div>
+      <hr>
+    </div>
+  </div>
+  

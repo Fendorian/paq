@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -12,8 +13,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { SliderComponent } from './slider/slider.component';
 import { CategoryFilterComponent } from './category-filter/category-filter.component';
 import { FormsModule } from '@angular/forms';
+import { HomepageCategoryFilterComponent } from './homepage-category-filter/homepage-category-filter.component';
 
-
+const appRoutes: Routes = [ // Update this line, change routes to appRoutes
+  { path: '', component: HomepageCategoryFilterComponent },
+  { path: 'product/:id', component: ProductDetailComponent },
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,13 +27,15 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     ProductDetailComponent,
     SliderComponent,
-    CategoryFilterComponent
+    CategoryFilterComponent,
+    HomepageCategoryFilterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   
   ],
   providers: [],

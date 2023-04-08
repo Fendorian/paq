@@ -1,0 +1,23 @@
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .category-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .category-card:hover {
+    background-color: #f0f0f0;
+  }
+  
