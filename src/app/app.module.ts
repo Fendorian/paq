@@ -14,9 +14,12 @@ import { SliderComponent } from './slider/slider.component';
 import { CategoryFilterComponent } from './category-filter/category-filter.component';
 import { FormsModule } from '@angular/forms';
 import { HomepageCategoryFilterComponent } from './homepage-category-filter/homepage-category-filter.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [ // Update this line, change routes to appRoutes
-  { path: '', component: HomepageCategoryFilterComponent },
+  { path: '', component: HomeComponent },
+  { path: 'products', component: HomepageCategoryFilterComponent },
   { path: 'product/:id', component: ProductDetailComponent },
 ];
 @NgModule({
@@ -28,7 +31,9 @@ const appRoutes: Routes = [ // Update this line, change routes to appRoutes
     ProductDetailComponent,
     SliderComponent,
     CategoryFilterComponent,
-    HomepageCategoryFilterComponent
+    HomepageCategoryFilterComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

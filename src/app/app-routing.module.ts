@@ -4,14 +4,25 @@ import { ProductsComponent } from './products/products.component';
 import { SubcategoriesComponent } from './subcategories/subcategories.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CategoryFilterComponent } from './category-filter/category-filter.component';
+import { HomeComponent } from './home/home.component';
+import { HomepageCategoryFilterComponent } from './homepage-category-filter/homepage-category-filter.component';
 
 
+
+
+// const routes: Routes = [
+//   { path: '', redirectTo: '/products', pathMatch: 'full' },
+//   { path: 'products', component: ProductsComponent },
+//   { path: 'subcategories', component: SubcategoriesComponent},
+//   { path: 'products/:id', component: ProductDetailComponent },
+//   { path: 'filter', component: CategoryFilterComponent }
+// ];
 const routes: Routes = [
-  { path: '', redirectTo: '/products', pathMatch: 'full' },
-  { path: 'products', component: ProductsComponent },
-  { path: 'subcategories', component: SubcategoriesComponent},
+  { path: '', component: HomeComponent },
+  { path: 'products', component: HomepageCategoryFilterComponent },
+  { path: 'subcategories', component: HomepageCategoryFilterComponent },
   { path: 'products/:id', component: ProductDetailComponent },
-  { path: 'filter', component: CategoryFilterComponent }
+  { path: 'filter', component: HomepageCategoryFilterComponent },
 ];
 
 @NgModule({
