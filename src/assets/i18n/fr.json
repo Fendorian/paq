@@ -1,6 +1,0 @@
-{
-    "home.title": "Bienvenue chez nous",
-    "home.message": "Ceci est un message en français",
-    "product.detail.price": "Prix: {{ price }} €"
-  }
-  

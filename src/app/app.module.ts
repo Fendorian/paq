@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { HomepageCategoryFilterComponent } from './homepage-category-filter/homepage-category-filter.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [ // Update this line, change routes to appRoutes
   { path: '', component: HomeComponent },
@@ -33,17 +34,29 @@ const appRoutes: Routes = [ // Update this line, change routes to appRoutes
     CategoryFilterComponent,
     HomepageCategoryFilterComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      }
+    })
   
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+

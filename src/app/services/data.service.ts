@@ -35,4 +35,7 @@ export class DataService {
       });
     });
   }
+  getTranslations(): Observable<any> {
+    return this.http.get('assets/languages.json');
+  }
 }

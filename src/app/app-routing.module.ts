@@ -6,23 +6,15 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { CategoryFilterComponent } from './category-filter/category-filter.component';
 import { HomeComponent } from './home/home.component';
 import { HomepageCategoryFilterComponent } from './homepage-category-filter/homepage-category-filter.component';
+import { ContactComponent } from './contact/contact.component';
 
-
-
-
-// const routes: Routes = [
-//   { path: '', redirectTo: '/products', pathMatch: 'full' },
-//   { path: 'products', component: ProductsComponent },
-//   { path: 'subcategories', component: SubcategoriesComponent},
-//   { path: 'products/:id', component: ProductDetailComponent },
-//   { path: 'filter', component: CategoryFilterComponent }
-// ];
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'products', component: HomepageCategoryFilterComponent },
   { path: 'subcategories', component: HomepageCategoryFilterComponent },
-  { path: 'products/:id', component: ProductDetailComponent },
-  { path: 'filter', component: HomepageCategoryFilterComponent },
+  { path: 'contact', component: ContactComponent },
+  // { path: 'products/:id', component: ProductDetailComponent },
+  { path: 'filter', component: HomepageCategoryFilterComponent }
 ];
 
 @NgModule({
