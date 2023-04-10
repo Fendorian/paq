@@ -23,6 +23,11 @@ const appRoutes: Routes = [ // Update this line, change routes to appRoutes
   { path: 'products', component: HomepageCategoryFilterComponent },
   { path: 'product/:id', component: ProductDetailComponent },
 ];
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,21 +47,17 @@ const appRoutes: Routes = [ // Update this line, change routes to appRoutes
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes),
-    TranslateModule.forRoot({
+    RouterModule.forRoot(appRoutes),    TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
         deps: [HttpClient],
-      }
+      },
     })
+    
   
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
-}
-

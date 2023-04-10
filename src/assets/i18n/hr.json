@@ -1,9 +1,7 @@
 {
-  "contact": {
-    "title": "Kontaktirajte nas",
-    "tel": "tel: +387 (0)36 644 855",
-    "fax": "fax: +387 (0)36 644 856",
-    "email": "Email: info@univesplast.com",
-    "address": "Adresa: Bare bb, 88260 Čitluk Bosna i Hercegovina"
+  "header": {
+    "homepage": "Početna",
+    "products": "Proizvodi",
+    "contactUs": "Kontaktirajte nas"
   }
 }

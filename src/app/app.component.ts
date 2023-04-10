@@ -17,12 +17,14 @@ export class AppComponent {
 
 constructor(private dataService: DataService, private translateService: TranslateService,private http: HttpClient) {
  }
-
+ onLanguageChange(selectedLanguage: string): void {
+  this.translateService.use(selectedLanguage);
+}
 
 ngOnInit(): void {
-  this.dataService.getTranslations().subscribe((translations) => {
-    this.translations = translations;
-  });
+  // this.dataService.getTranslations().subscribe((translations) => {
+  //   this.translations = translations;
+  // });
 }
 
 

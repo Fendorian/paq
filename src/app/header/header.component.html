@@ -3,11 +3,13 @@
     <a routerLink="/">Paq</a>
   </h1>
   <nav>
-    <a routerLink="/">Homepage</a>
-    <a routerLink="/products">Products</a>
-    <a routerLink="/contact">Contact Us</a>
+    <a routerLink="/">{{translations[currentLanguage].homepage}}</a>
+    <a routerLink="/products">{{translations[currentLanguage].products}}</a>
+    <a routerLink="/contact">{{translations[currentLanguage].contact}}</a>
   </nav>
-
-
-
+  <select (change)="changeLanguage($event)">
+    <option value="en">English</option>
+    <option value="de">Deutsch</option>
+    <option value="hr">Hrvatski</option>
+  </select>
 </header>

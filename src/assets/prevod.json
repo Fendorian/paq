@@ -1,0 +1,77 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "name": "Electronics",
+        "subcategories": [
+          {
+            "id": 1,
+            "name": "Smartphones",
+            "products": [
+              { "id": 1, "name": "Phone X", "price": 899 },
+              { "id": 2, "name": "Phone Y", "price": 799 },
+              { "id": 3, "name": "Phone Z", "price": 699 }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Laptops",
+            "products": [
+              { "id": 4, "name": "Laptop A", "price": 1199 },
+              { "id": 5, "name": "Laptop B", "price": 999 },
+              { "id": 6, "name": "Laptop C", "price": 849 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Clothing",
+        "subcategories": [
+          {
+            "id": 3,
+            "name": "Shirts",
+            "products": [
+              { "id": 7, "name": "Shirt 1", "price": 29 },
+              { "id": 8, "name": "Shirt 2", "price": 39 },
+              { "id": 9, "name": "Shirt 3", "price": 49 }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Pants",
+            "products": [
+              { "id": 10, "name": "Pant 1", "price": 59 },
+              { "id": 11, "name": "Pant 2", "price": 69 },
+              { "id": 12, "name": "Pant 3", "price": 79 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Books",
+        "subcategories": [
+          {
+            "id": 5,
+            "name": "Fiction",
+            "products": [
+              { "id": 13, "name": "Book A", "price": 19 },
+              { "id": 14, "name": "Book B", "price": 15 },
+              { "id": 15, "name": "Book C", "price": 18 }
+            ]
+          },
+          {
+            "id": 6,
+            "name": "Non-Fiction",
+            "products": [
+              { "id": 16, "name": "Book D", "price": 22 },
+              { "id": 17, "name": "Book E", "price": 24 },
+              { "id": 18, "name": "Book F", "price": 26 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

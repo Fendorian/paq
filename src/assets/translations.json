@@ -1,0 +1,17 @@
+{
+  "en": {
+    "homepage": "Homepage",
+    "products": "Products",
+    "contact": "Contact Us"
+  },
+  "de": {
+    "homepage": "Startseite",
+    "products": "Produkte",
+    "contact": "Kontakt"
+  },
+  "hr": {
+    "homepage": "Početna",
+    "products": "Proizvodi",
+    "contact": "Kontaktirajte nas"
+  }
+}
